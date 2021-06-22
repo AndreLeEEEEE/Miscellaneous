@@ -12,6 +12,8 @@ Tasks:
 11. Upgrading the Dev site's PHP and plugins
 12. Making wanco.com/home/message-sign-qr
 13. Sha256 verification
+14. Facial Recognition
+15. HTML checksum
 
 Status stages:
 Requirements - I'm still gathering information on what has to be done in this project
@@ -21,15 +23,17 @@ Deployment - The script/work is getting tested to determine its viability, uncov
 Complete - The project is done, though it may be revisited in the future due to new conditions
 Abandoned - Under certain circumstances, the project had to be cancelled and was never followed through
 
-1.
-Objective: Track the auto line's conveyor belt movement using Rick's metal detector.
+1. Objective: Track the auto line's conveyor belt movement using Rick's metal detector.
 Status: Construction 
 Priority: Medium
 Current events: Rick has created a metal detector that signals 0, 1, and 3 depending on if the 
-belt is moving, still, or in error(?). I have to get pyUSB to work somehow to read the signals.
+belt is moving, still, or in error. Glenn has suggested that ready-made hardware (ex. hour meter
+be purchased and used to track the motor or the 'command line'. The command line is supposedly
+where the belt is turned on and off, so monitoring the source of movement is the most straightforward
+idea. Glenn said he'd talk to Alex about this project. Since there's no date as to when I can expect
+a final version of the metal detector, fundamental changes to the methodology may occur.
 
-2. 
-Objective: Reformat Ed's excel sheets for simpler transfer to Monday.com.
+2. Objective: Reformat Ed's excel sheets for simpler transfer to Monday.com.
 Status: Abandoned
 Priority: None
 Current events: People seem to believe that I gave this program to Ed. I haven't.
@@ -41,24 +45,25 @@ like that doesn't spread.
 
 3. Objective: Search for active parts in SR03-15 and C00-11. Once inside container history,
 determine if the container is inactive.
-Status: Deployment
-Priority: Low
-Current events: I'm waiting for Kevin's input on the resulting excel sheet I sent him.
+Status: Abandoned
+Priority: None
+Current events: I'm waiting for Kevin's input on the resulting excel sheet I sent him. I don't
+think it'll happen.
 
 4. Objective: Take relevant information from the WIR page and put them in an excel sheet.
 This should be universal for each line.
-Status: Requirements
-Priority: Low
-Current events: I'm still trying to figure out the WIR results table.
+Status: Abandoned
+Priority: None
+Current events: I'm still trying to figure out the WIR results table. No one has inquired about
+this in months so I think the idea is dead.
 
 5. Objective: Use one of two methods, PRP or WIR, to pull draw bar information off of Plex
 and put it in an excel sheet for Monday.com. The automated importation to Monday.com may be viable.
-Status: Deployment
-Priority: Low
-Current events: There's no telling when covid restrictions will be lifted. This program has to be
-demoed to Kit and someone else, but that will probably require me to be there with them to 
-ensure the demo goes as expected. With the advent of pyinstaller, maybe I could just send the
-exe file and see what happens.
+Status: Abandoned
+Priority: None
+Current events: In addition to no one mentioning this project for a long time, Kit was fired and
+replaced by someone else. If this project is to come to fruition, the program has to be demoed to
+the new head.
 
 6. Objective: Get the amount of trailers dropped in trailer lines one and two and display them on
 a message board. The board should tell the current time and turn red if a line hasn't made a trailer
@@ -67,7 +72,9 @@ Status: Deployment
 Priority: Medium
 Current events: After receiving a new DCU board, I have to run more tests. I cannot do those yet until
 the IT department puts in the board behind a NAT router. When the project is ready to roll, I have to
-run the .exe through task scheduler on a separate computer on my work station.
+run the .exe through task scheduler on a separate computer on my work station. Dagan said he'd take
+care of the NAT router. Since Glenn said Wanco's first ITS project is probably gonna finish up in 2
+weeks, I should expect to work on this in the near future.
 
 7. Objective: Reformat Dan's excel sheets for simpler transfer to Monday.com.
 Status: Complete
@@ -93,20 +100,43 @@ Priority: None
 Current events: I have taught him how to use the program and only what he needs for Monday.com.
 
 11. Objective: Upgrade the dev and live sites' PHP and plugins.
-Status: Construction
-Priority: Low
+Status: Abandoned
+Priority: None
 Current Events: The dev site has been rolled back to PHP 5.6. No one has talked about this since.
+A tremendous amount of work would be required from more people than myself to update the site to
+be compatible with PHP 8.0. Since the site works for now and no one (besides myself) has a lot of time
+to do anything else, I don't believe we'll ever update the site unless a really big problem occurs
+because of it.
 
 12. Objective: Make a page on the Wanco's website that contains troubleshooting information
 about Wanco products that customers reach by scanning QR stickers.
 Status: Construction
-Priority: Low
-Current Events: I have made an example page which displays the formatting.
+Priority: Extremely Low
+Current Events: The example page I made that displayed different formatting was on the live site.
+However, something that I'm not quite clear on happened to the live site, so the example page is
+gone. Due to the prominence of Wanco's first ITS project, I think the QR idea has been pushed back
+a lot.
 
 13. Objective: Make a program that generates the SHA256 hash value of files.
 Make a second program that compares the SHA256 hash values of those files.
-Status: Deployment
-Priority: Low
+Status: Complete
+Priority: None
 Current Events: I have realized that this project was moot when I discovered that 7-Winzip
 came with hashing features. The program isn't needed to generate the SHA256 hash value of
-files since 7-Winzip allows users to easily do that with the right-click menu.
+files since 7-Winzip allows users to easily do that with the right-click menu. However,
+Rick said he'd use the program anyway and is apparently satisfied with it. Project done.
+
+14. Objective: Collect information from Wanco's new facial recognition machines and put 
+them into Plex.
+Status: Requirements
+Priority: Medium
+Current Events: Waiting on David Fuchs to purchase a new facial recognition machine since
+the one I have now cannot connect to my computer and the physical and pdf instruction
+manuals don't help at all. 
+
+15. Objective: Calculate the Sha256 hash value of a page's HTML to determine if changes
+have occurred.
+Status: Construction
+Priority: Low
+Current Events: The base of the program has been created, but I still have to show it to 
+Dagan and Wynn.
