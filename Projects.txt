@@ -112,11 +112,9 @@ because of it.
 about Wanco products that customers reach by scanning QR stickers.
 Status: Construction
 Priority: Extremely Low
-Current Events: The example page I made that displayed different formatting was on the live site.
-However, something that I'm not quite clear on happened to the live site, so the example page is
-gone; although I still have a file with all of the page's HTML so it's not truly lost. 
-Due to the prominence of Wanco's first ITS project, I think the QR idea has been pushed back
-a lot.
+Current Events: I thought the example page I made was gone forever, but I found it in the trash
+bin on the dev site. I restored it and the only things missing are the embedded videos because
+they aren't in the dev site's media library.
 
 13. Objective: Make a program that generates the SHA256 hash value of files.
 Make a second program that compares the SHA256 hash values of those files.
