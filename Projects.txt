@@ -110,7 +110,7 @@ because of it.
 
 12. Objective: Make a page on the Wanco's website that contains troubleshooting information
 about Wanco products that customers reach by scanning QR stickers.
-Status: Construction
+Status: Requirements/Construction
 Priority: Extremely Low
 Current Events: I thought the example page I made was gone forever, but I found it in the trash
 bin on the dev site. I restored it and the only things missing are the embedded videos because
