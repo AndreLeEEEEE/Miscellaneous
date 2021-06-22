@@ -114,7 +114,8 @@ Status: Construction
 Priority: Extremely Low
 Current Events: The example page I made that displayed different formatting was on the live site.
 However, something that I'm not quite clear on happened to the live site, so the example page is
-gone. Due to the prominence of Wanco's first ITS project, I think the QR idea has been pushed back
+gone; although I still have a file with all of the page's HTML so it's not truly lost. 
+Due to the prominence of Wanco's first ITS project, I think the QR idea has been pushed back
 a lot.
 
 13. Objective: Make a program that generates the SHA256 hash value of files.
