@@ -1,0 +1,112 @@
+Tasks:
+1. Recording Paint line's conveyor belt movement
+2. Ed's excel sheets
+3. Organize stockroom
+4. Plex WIR screen to Monday.com
+5. Pull drawbar information from Plex to Monday.com
+6. Plex to message board
+7. Dan's excel sheets
+8. Kevin's excel sheets
+9. Digital employment application
+10. Rick, Excel, and Monday
+11. Upgrading the Dev site's PHP and plugins
+12. Making wanco.com/home/message-sign-qr
+13. Sha256 verification
+
+Status stages:
+Requirements - I'm still gathering information on what has to be done in this project
+Modeling - I'm gathering details on how to achieve the end goal
+Construction - I'm programming the script
+Deployment - The script/work is getting tested to determine its viability, uncover bugs, and "inspire" more requirements
+Complete - The project is done, though it may be revisited in the future due to new conditions
+Abandoned - Under certain circumstances, the project had to be cancelled and was never followed through
+
+1.
+Objective: Track the auto line's conveyor belt movement using Rick's metal detector.
+Status: Construction 
+Priority: Medium
+Current events: Rick has created a metal detector that signals 0, 1, and 3 depending on if the 
+belt is moving, still, or in error(?). I have to get pyUSB to work somehow to read the signals.
+
+2. 
+Objective: Reformat Ed's excel sheets for simpler transfer to Monday.com.
+Status: Abandoned
+Priority: None
+Current events: People seem to believe that I gave this program to Ed. I haven't.
+He doesn't have it because the fall 2020 semester started before I gave it to him.
+When I came back, the important project to work on was project 6. I'm sure the 
+fabrication, paint, or stockroom team has noticed that Ed (probably) still sends in
+his personalized excel sheets, but the lack of communication at Wanco means information
+like that doesn't spread. 
+
+3. Objective: Search for active parts in SR03-15 and C00-11. Once inside container history,
+determine if the container is inactive.
+Status: Deployment
+Priority: Low
+Current events: I'm waiting for Kevin's input on the resulting excel sheet I sent him.
+
+4. Objective: Take relevant information from the WIR page and put them in an excel sheet.
+This should be universal for each line.
+Status: Requirements
+Priority: Low
+Current events: I'm still trying to figure out the WIR results table.
+
+5. Objective: Use one of two methods, PRP or WIR, to pull draw bar information off of Plex
+and put it in an excel sheet for Monday.com. The automated importation to Monday.com may be viable.
+Status: Deployment
+Priority: Low
+Current events: There's no telling when covid restrictions will be lifted. This program has to be
+demoed to Kit and someone else, but that will probably require me to be there with them to 
+ensure the demo goes as expected. With the advent of pyinstaller, maybe I could just send the
+exe file and see what happens.
+
+6. Objective: Get the amount of trailers dropped in trailer lines one and two and display them on
+a message board. The board should tell the current time and turn red if a line hasn't made a trailer
+in a certain time frame. An .ini file is read in with the required parameters.
+Status: Deployment
+Priority: Medium
+Current events: After receiving a new DCU board, I have to run more tests. I cannot do those yet until
+the IT department puts in the board behind a NAT router. When the project is ready to roll, I have to
+run the .exe through task scheduler on a separate computer on my work station.
+
+7. Objective: Reformat Dan's excel sheets for simpler transfer to Monday.com.
+Status: Complete
+Priority: None
+Current events: After many tweaks to the code after deployment, Dan hasn't requested my help on it.
+
+8. Objective: Combine many of Kevin's excel workbooks and sheets into one sheet.
+Status: Complete
+Priority: None
+Current events: Kevin has his gigasheet and probably won't ask me to do this again for a while
+
+9. Objective: Use wordpress and gravity forms to make a digital employment application to put
+on Wanco's website.
+Status: Deployment
+Priority: Low
+Current events: The form has been completed on the development site. I'll leave it up to Alex to do
+what he sees fit with it.
+
+10. Objective: Make a program that takes in information about part requests and puts the data on an
+Excel sheet for Monday.com for Rick Sr.
+Status: Complete
+Priority: None
+Current events: I have taught him how to use the program and only what he needs for Monday.com.
+
+11. Objective: Upgrade the dev and live sites' PHP and plugins.
+Status: Construction
+Priority: Low
+Current Events: The dev site has been rolled back to PHP 5.6. No one has talked about this since.
+
+12. Objective: Make a page on the Wanco's website that contains troubleshooting information
+about Wanco products that customers reach by scanning QR stickers.
+Status: Construction
+Priority: Low
+Current Events: I have made an example page which displays the formatting.
+
+13. Objective: Make a program that generates the SHA256 hash value of files.
+Make a second program that compares the SHA256 hash values of those files.
+Status: Deployment
+Priority: Low
+Current Events: I have realized that this project was moot when I discovered that 7-Winzip
+came with hashing features. The program isn't needed to generate the SHA256 hash value of
+files since 7-Winzip allows users to easily do that with the right-click menu.
