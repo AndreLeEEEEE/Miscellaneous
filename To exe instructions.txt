@@ -1,0 +1,12 @@
+pyinstaller
+In command prompt, traverse to the location of the python file you want to 
+convert and pyinstaller.exe.
+Type in:
+pyinstaller --onefile -w [python file name]
+--onefile means do the process on just the file, without this, pyinstaller would run on the whole directory(?)
+-noconsole (or -w) means running the executable won't bring up command prompt unless the program
+needs to prints something. The omission of -w means the program will bring up
+command prompt even if the program doesn't use it at all.
+
+auto-py-to-exe
+Go to the destination and type auto-py-to-exe into the command prompt.
