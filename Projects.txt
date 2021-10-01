@@ -1,3 +1,5 @@
+Outdated
+
 Tasks:
 1. Recording Paint line's conveyor belt movement
 2. Ed's excel sheets
